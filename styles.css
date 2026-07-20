@@ -157,9 +157,14 @@ body::after { bottom: -220px; left: -160px; background: rgba(33,87,180,.15); }
   animation: rise .6s cubic-bezier(.2,.8,.2,1) both;
 }
 
+.link-card.website { --accent: #168fff; }
+.link-card.instagram { --accent: #ff3fa4; }
+.link-card.whatsapp { --accent: #25d366; }
 .link-card:nth-child(1) { animation-delay: .14s; }
-.link-card:nth-child(2) { --accent: #25d366; animation-delay: .22s; }
-.link-card:nth-child(3) { --accent: #168fff; animation-delay: .3s; }
+.link-card:nth-child(2) { animation-delay: .22s; }
+.link-card:nth-child(3) { animation-delay: .3s; }
+.link-card:nth-child(4) { animation-delay: .38s; }
+.link-card:nth-child(5) { animation-delay: .46s; }
 
 .link-card::before {
   content: "";
