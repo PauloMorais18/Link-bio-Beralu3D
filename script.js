@@ -1,0 +1,9 @@
+const cards = document.querySelectorAll('.link-card');
+
+cards.forEach((card) => {
+  card.addEventListener('pointermove', (event) => {
+    const rect = card.getBoundingClientRect();
+    card.style.setProperty('--x', `${event.clientX - rect.left}px`);
+    card.style.setProperty('--y', `${event.clientY - rect.top}px`);
+  });
+});
